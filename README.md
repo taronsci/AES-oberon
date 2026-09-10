@@ -5,14 +5,10 @@ To build the program you will need an Oberon compiler.
 I have used [VOC](https://github.com/vishapoberon/compiler) during development.  
 
 ## Building
-1. Build modules for contants and xor
-```
-voc Constant.mod Xor.mod
-```
 
-2. Build main module
+Run the Makefile to build the Constants, Xor, and main Aes modules:
 ```
-voc Aes.mod -m
+make
 ```
 
 ## Usage
