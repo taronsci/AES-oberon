@@ -5,8 +5,8 @@ PROCEDURE xor*(x, y : INTEGER): INTEGER;
 VAR
     xSet, ySet : SET;
 BEGIN
-    xSet := SYSTEM.VAL(SET, x);
-    ySet := SYSTEM.VAL(SET, y);
+    SYSTEM.GET(SYSTEM.ADR(x), xSet);
+    SYSTEM.GET(SYSTEM.ADR(y), ySet);
 
     xSet := xSet / ySet;
     RETURN SYSTEM.VAL(INTEGER, xSet);
